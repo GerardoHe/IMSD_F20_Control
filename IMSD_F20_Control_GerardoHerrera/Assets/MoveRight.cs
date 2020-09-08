@@ -21,7 +21,8 @@ public class MoveRight : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        myTransform.position = myTransform.position + new Vector3(1, 0, 0) * speed * Time.deltaTime;
+        //myTransform.position = 
+       // myTransform.position = myTransform.position + new Vector3(1, 0, 0) * speed * Time.deltaTime;
         timer += Time.deltaTime;
         if (timer >= 1)
         {
