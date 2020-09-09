@@ -12,7 +12,7 @@ public class move : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        myTransform.position = new Vector3(-10, 0, 0);
+        myTransform.position = new Vector3(-10, myTransform.position.y, 0);
         timer = 0;
     }
 
