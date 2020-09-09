@@ -28,7 +28,7 @@ public class MoveRight : MonoBehaviour
         //myTransform.position = 
        // myTransform.position = myTransform.position + new Vector3(1, 0, 0) * speed * Time.deltaTime;
         timer += Time.deltaTime;
-        if (timer >= 1)
+        if (timer >= 0.050)
         {
             timer = 0;
             //myTransform.position += new Vector3(Random.Range(-1.00f, 2.00f), 0, 0) * speed;
