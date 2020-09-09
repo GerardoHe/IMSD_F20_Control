@@ -13,12 +13,12 @@ public class MoveRight : MonoBehaviour
 
     private float timer;
 
-    private void Update()
+    //private void Update()
     // Start is called before the first frame update
     void Start()
     {
-        myTransform.position = new vector3(0, Random.Range(0.0f, 1.0f), 0);
-        myTransform.position = new Vector3(-10, 0, 0);
+       // myTransform.position = new Vector3(0, Random.Range(0.0f, 1.0f), 0);
+        myTransform.position = new Vector3(-10, myTransform.position.y, 0);
         timer = 0;
     }
 
@@ -31,6 +31,7 @@ public class MoveRight : MonoBehaviour
         if (timer >= 1)
         {
             timer = 0;
+            //myTransform.position += new Vector3(Random.Range(-1.00f, 2.00f), 0, 0) * speed;
             myTransform.position += new Vector3(1, 0, 0);
         }
     }
