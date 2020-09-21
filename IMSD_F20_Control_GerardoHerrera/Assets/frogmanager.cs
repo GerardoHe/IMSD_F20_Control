@@ -5,14 +5,21 @@ using UnityEngine;
 public class frogmanager : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject frog;
 
-    // Update is called once per frame
+    public GameObject frogPrefab;
+   
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (frog != null)
+                Destroy(frog);
+        }
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            if (frog == null)
+            frog = Instantiate(frogPrefab, new Vector3(5, 5, 68), Quaternion.identity);
+        }
     }
 }
