@@ -18,5 +18,10 @@ public class movelikecar : MonoBehaviour
     void Update()
     {
         myTransform.position += Vector3.right * Time.deltaTime * speed;
+         
+        if (myTransform.position.x > 8)
+        {
+            myTransform.position += Vector3.left * 16;
+        }
     }
 }
